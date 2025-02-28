@@ -1,0 +1,43 @@
+---
+title: "WeaponSystem_BPI"
+description: "An overview of the Weapon System Blueprint Interface in the TPS Kit."
+---
+
+# WeaponSystem_BPI
+
+The **Weapon System Blueprint Interface (WeaponSystem_BPI)** serves as a communication layer between actors, primarily used for interaction between weapons and the player character. This interface ensures modularity and flexibility in handling weapon-related events.
+
+## Location
+
+📂 `/Game/TPSKit/Blueprints/Core/WeaponSystem/Interfaces/WeaponSystem_BPI`
+
+## Purpose
+
+WeaponSystem_BPI is designed to allow seamless interaction between the **Shooter Character** and weapon actors. It is included by default in the shooter blueprint located at:
+
+📂 `/Game/TPSKit/Blueprints/Shooter/CPB_Sandbox_Shooter_Character`
+
+## Key Functions
+
+Below are the main functions included in **WeaponSystem_BPI**:
+
+- **EquipWeapon(WeaponData)**
+- **FireWeapon(aim, Camera, PlayerController)**
+- **StopFireWeapon()**
+- **Reload()**
+- **FireMuzzleEffect()**
+- **FireTracer()**
+- **DealtDamageToPlayer()**
+- **ReceiveKillReward()**
+- **Recoil()**
+- **HitFeedbackUI()**
+
+These functions facilitate smooth communication between the character and weapons, ensuring responsive and dynamic gameplay mechanics.
+
+## Implementation
+
+To integrate **WeaponSystem_BPI**, ensure that any custom weapon or character blueprint implements this interface for proper event handling.
+
+## Next Steps
+
+➡️ [Weapon Manager Component](/weapon-system/components/weapon-manager)

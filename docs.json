@@ -1,0 +1,71 @@
+{
+  "name": "Soriox's GASP TPS Kit",
+  "description": "My documentation site",
+  "sidebar": [
+  {
+    "group": "Getting Started",
+    "pages": [
+      {
+        "title": "Introduction",
+        "href": "/"
+      },
+      {
+        "title": "Setup",
+        "href": "/setup"
+      },
+      {
+        "title": "Core Features",
+        "href": "/core-features"
+      }
+    ]
+  },
+  {
+    "group": "Weapon System",
+    "pages": [
+      {
+        "title": "Intro",
+        "href": "/weapon-system"
+      },
+      {
+        "group": "Interfaces",
+        "pages": [
+          {
+            "title": "Weapon System BPI",
+            "href": "/weapon-system/interfaces/weapon-system-bpi"
+          }
+        ]
+      },
+      {
+        "group": "Components",
+        "pages": [
+          {
+            "title": "Weapon Manager Component",
+            "href": "/weapon-system/components/weapon-manager"
+          },
+          {
+            "title": "Weapon System Component",
+            "href": "/weapon-system/components/weapon-system"
+          }
+        ]
+      },
+      {
+        "group": "Guides",
+        "pages": [
+          {
+            "title": "Rigging firearms",
+            "href": "/weapon-system/guides/rigging-firearms"
+          },
+          {
+            "title": "Creating weapon data assets",
+            "href": "/weapon-system/guides/weapon-data-assets"
+          },
+          {
+            "title": "Creating a custom weapon blueprint",
+            "href": "/weapon-system/guides/custom-weapon-blueprints"
+          }
+        ]
+      }
+    ]
+  }
+]
+}

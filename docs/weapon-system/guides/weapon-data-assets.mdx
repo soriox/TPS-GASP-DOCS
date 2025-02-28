@@ -1,0 +1,30 @@
+---
+title: "Creating Custom Weapon Data Assets"
+description: "Guide on creating and assigning custom weapon data assets in the TPS Kit."
+---
+
+# Creating Custom Weapon Data Assets
+
+Weapon data assets define the core properties of weapons in the TPS Kit. To create a custom weapon data asset, follow the steps below.
+
+## Creating a Weapon Data Asset
+
+1. **Create a New Data Asset**
+   - Right-click in the Content Browser.
+   - Navigate to `Miscellaneous` → `Data Asset`.
+
+2. **Select the Appropriate Class**
+   - **WeaponData_BP** – For basic weapons.
+   - **MeleeData_BP** – For melee weapons.
+   - **FirearmData_BP** – For firearms.
+
+   📂 These can be found in:  
+   `/Game/TPSKit/Blueprints/Core/WeaponSystem/WeaponData/`
+
+## Assigning the Data Asset
+
+Once created, assign this data asset to the **WeaponData** variable in any blueprint that is a child of **MasterWeapon_BP**.
+
+## Next Steps
+
+➡️ [Creating a Custom Weapon Blueprint](./custom-weapon-blueprint)

@@ -1,0 +1,58 @@
+---
+title: "Weapon System Component"
+description: "An overview of the Weapon System Component in the TPS Kit."
+---
+
+# Weapon System Component
+
+The **Weapon System Component** is attached to the actual weapon blueprint and can be used for both **firearms** and **melee weapons**. It provides core functionality for firing, updating, and handling interactions with the weapon.
+
+## Location
+
+📂 `/Game/TPSKit/Blueprints/Core/WeaponSystem/Components/WeaponSystem`
+
+## Key Functions & Variables
+
+### FireWeapon (Event)
+- Used to fire the weapon.
+- Handles line tracing, muzzle flash, bullet tracers, fire sounds, animations, and more.
+- Fully **replicated** for multiplayer.
+
+### UpdateWeaponSystem & UpdateWeaponSocket (Functions)
+- These functions **initialize** the weapon system component.
+- **Must be called** before using the weapon.
+
+When you call UpdateWeaponSystem, you need to especially assign the weapon data which is included on all weapon blueprints. You need to assign this data asset to either the WeaponData or FirearmData variables. Both are no necssary as the weapon system will only use one or the other. The FirearmData variable takes priority.
+
+<Image zoom src="/assets/images/tbhg485ybtv9845854btg80b458gb45789.png" />
+    
+
+### HandleReload (Function)
+- Updates **ammo counts** after a reload action.
+
+### Player Camera Manager
+- Before firing, the **Player Camera Manager** must be set on the Weapon System (it is a variable in the component).
+
+## Firearms-Specific Logic
+
+- Fire modes (**Single, Full Auto, Burst**) must be handled manually in the weapon blueprint.
+- Playing **firing animations**, **reload animations**, and checking **ammo availability** must be implemented in the blueprint.
+- Use **[Firearm_BP](./firearm-bp)** as a reference—it includes a fully functional setup for firearms.
+
+## Weapon Blueprint Variables
+
+### AmmoData (Variable)
+- Inherited from **MasterWeapon_BP**.
+- Handles **ammo counts** and **extra clips**.
+
+### AutoReload (Variable)
+- Available on **[Firearm_BP](./firearm-bp)**.
+- Enables **automatic reloading** when out of ammo.
+
+## Next Steps
+
+➡️ [Creating a custom weapon blueprint](/weapon-system/guides/custom-weapon-blueprints)
+
+➡️ [Rigging firearms](/weapon-system/guides/rigging-firearms)
+
+➡️ [Creating weapon data assets](/weapon-system/guides/weapon-data-assets)

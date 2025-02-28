@@ -1,0 +1,43 @@
+---
+title: "Creating a Custom Weapon Blueprint"
+description: "Step-by-step guide to creating a custom weapon blueprint for the TPS Kit."
+---
+
+# Creating a Custom Weapon Blueprint
+
+To create a weapon blueprint for the **Weapon System**, you need to have a **[rigged weapon](./rigged-weapon)** and a **[data asset](./weapon-data-asset)** ready. Make sure these are set up before proceeding.
+
+## Choosing the Right Base Blueprint
+
+Once your assets are ready, you can create a child blueprint based on one of the following:
+
+- **Low-Level Functionality:**
+  - **[Firearm_BP](./firearm-bp)** (for firearms)
+  - **[MeleeWeapon_BP](./meleeweapon-bp)** (for melee weapons)
+
+- **High-Level Functionality:**
+  - **AssaultRifle_BP** or **Handgun_BP**, found in:
+    📂 `/Game/TPSKit/Blueprints/Core/WeaponSystem/ChildBlueprints/`
+
+## Important Variables
+
+All weapon blueprints contain two key variables:
+
+- **Ammo Data** – Manages ammo count and extra clips.
+- **Weapon Data** – **Very important!** This is used to set the weapon's **data asset**, which defines all properties related to the weapon.
+
+## Assigning the Weapon Data Asset
+
+1. **Create the blueprint** based on a master blueprint.
+2. **Assign the weapon data asset** inside the **Weapon Data** variable.
+
+### Reference Files
+
+- **Demo Data Assets:** 📂 `/Game/TPSKit/Examples/WeaponData/`
+- **Demo Weapon Blueprints:** 📂 `/Game/TPSKit/Examples/Weapons/`
+
+## Next Steps
+
+➡️ [Setting Up a Rigged Weapon](./rigged-weapon)
+
+➡️ [Creating a Weapon Data Asset](./weapon-data-asset)
