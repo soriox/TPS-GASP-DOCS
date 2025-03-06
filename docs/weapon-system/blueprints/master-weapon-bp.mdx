@@ -1,0 +1,34 @@
+---
+title: "MasterWeapon_BP"
+description: "Overview of the MasterWeapon_BP in the TPS Kit."
+---
+
+# MasterWeapon_BP
+
+The **MasterWeapon_BP** is the base blueprint for all weapons in the TPS Kit. It defines core functionality and serves as the parent class for both firearms and melee weapons.
+
+## Location
+
+📂 `/Game/TPSKit/Blueprints/Core/WeaponSystem/Blueprints/MasterWeapon_BP`
+
+## Purpose
+
+- Serves as the **foundation** for all weapons.
+- Contains shared variables such as **AmmoData** and **WeaponData**.
+- Provides a standardized structure for weapon behavior and properties.
+
+## Key Features
+
+- **Ammo Data Variable** – Handles ammo count and extra clips (for firearms).
+- **Expandable Structure** – Designed to be inherited by other weapon types.
+
+## Inherited Blueprints
+
+- **[Firearm_BP](./firearm-bp)** – Implements firearm-specific logic.
+- **[Melee_Weapon_BP](./melee-weapon-bp)** – Placeholder for future melee mechanics.
+
+## Usage
+
+To create a custom weapon:
+1. **Create a child blueprint** of MasterWeapon_BP.
+2. **Assign a Weapon Data Asset** in the **Weapon Data** variable.

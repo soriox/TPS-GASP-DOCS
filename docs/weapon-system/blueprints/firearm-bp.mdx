@@ -1,0 +1,28 @@
+---
+title: "Firearm_BP"
+description: "Overview of the Firearm_BP in the TPS Kit."
+---
+
+# Firearm_BP
+
+The **Firearm_BP** blueprint is designed exclusively for firearms and serves as a base for firearm mechanics in the TPS Kit. It derives from **MasterWeapon_BP** and includes core firearm functionality.
+
+## Location
+
+📂 `/Game/TPSKit/Blueprints/Core/WeaponSystem/Blueprints/Firearm_BP`
+
+## Key Features
+
+- **Derived from MasterWeapon_BP** – Provides essential weapon properties and functionality.
+- **Weapon Data Variable** – Holds a reference to a **Weapon Data Asset**, which defines weapon attributes.
+- **Includes [Weapon System Component](/weapon-system/components/weapon-system)** – Configured for firearms.
+- **Fire Modes** – Supports **Single**, **Full Auto**, and **Burst** fire modes.
+- **Firing Logic** – Checks if the weapon can fire based on ammo and conditions.
+- **Fire Animations & Reloading** – Handles shooting and reload animations with input support.
+
+## Usage
+
+You can use **Firearm_BP** as a foundation for creating your own firearms in two ways:
+
+1. **Create a child blueprint** – Inherits all functionality while allowing modifications.
+2. **Duplicate Firearm_BP** – Use as a template to implement your own firearm logic.

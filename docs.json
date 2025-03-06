@@ -20,6 +20,31 @@
     ]
   },
   {
+    "group": "Guides",
+    "pages": [
+      {
+        "title": "Installing modules to the kit",
+        "href": "/guides/install-modules"
+      },
+      {
+        "title": "Rigging firearms",
+        "href": "/guides/rigging-firearms"
+      },
+      {
+        "title": "Creating weapon data assets",
+        "href": "/guides/weapon-data-assets"
+      },
+      {
+        "title": "Creating a custom weapon blueprint",
+        "href": "/guides/custom-weapon-blueprints"
+      },
+      {
+        "title": "Adding Metahumans",
+        "href": "/guides/metahumans"
+      }
+    ]
+  },
+  {
     "group": "Weapon System",
     "pages": [
       {
@@ -49,19 +74,36 @@
         ]
       },
       {
-        "group": "Guides",
+        "group": "Blueprints",
         "pages": [
           {
-            "title": "Rigging firearms",
-            "href": "/weapon-system/guides/rigging-firearms"
+            "title": "MasterWeapon_BP",
+            "href": "/weapon-system/blueprints/master-weapon-bp"
           },
           {
-            "title": "Creating weapon data assets",
-            "href": "/weapon-system/guides/weapon-data-assets"
+            "title": "Firearm_BP",
+            "href": "/weapon-system/blueprints/firearm-bp"
           },
           {
-            "title": "Creating a custom weapon blueprint",
-            "href": "/weapon-system/guides/custom-weapon-blueprints"
+            "title": "Melee_Weapon_BP",
+            "href": "/weapon-system/blueprints/melee-bp"
+          }
+        ]
+      },
+      {
+        "group": "Weapon Data",
+        "pages": [
+          {
+            "title": "WeaponData_BP",
+            "href": "/weapon-system/data/weapon-data-bp"
+          },
+          {
+            "title": "FirearmData_BP",
+            "href": "/weapon-system/data/firearm-data-bp"
+          },
+          {
+            "title": "MeleeData_BP",
+            "href": "/weapon-system/data/melee-data-bp"
           }
         ]
       }

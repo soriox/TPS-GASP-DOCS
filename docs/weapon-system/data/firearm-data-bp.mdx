@@ -1,0 +1,36 @@
+---
+title: "FirearmData_BP"
+description: "Overview of the FirearmData_BP in the TPS Kit."
+---
+
+# FirearmData_BP
+
+The **FirearmData_BP** is a child class of **[WeaponData_BP](/weapon-system/data/weapon-data-bp)** and is specifically designed for firearms. It stores critical data related to firearm behavior, animations, sounds, and fire mechanics.
+
+## Location
+
+📂 `/Game/TPSKit/Blueprints/Core/WeaponSystem/WeaponData/`
+
+## Purpose
+
+- Stores essential firearm-specific attributes.
+- Used to define animation, sound, and fire behavior for firearms.
+- Works in conjunction with the **Weapon System Component** to dictate weapon functionality.
+
+## Key Data Stored
+
+- **Animation Data** – Defines firing, reloading, and weapon handling animations.
+- **Sound Data** – Contains references for firing and reloading sounds.
+- **Fire Mode Data** – Supports **Single, Full Auto, and Burst** modes.
+- **Bullet Spread Data** – Configures bullet dispersion for different fire modes.
+
+## Added Variables
+
+<Image zoom src="/assets/images/yfg394vf7934vf93qv4f97843vq07v34.png" />
+
+## Creating a Firearm Data Asset
+
+1. **Right-click** in the Content Browser.
+2. Navigate to `Miscellaneous` → `Data Asset`.
+3. Select `FirearmData_BP` as the asset class.
+4. Configure the necessary animation, sound, fire mode, and bullet spread values.

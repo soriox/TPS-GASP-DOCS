@@ -1,0 +1,33 @@
+---
+title: "WeaponData_BP"
+description: "Overview of the WeaponData_BP in the TPS Kit."
+---
+
+# WeaponData_BP
+
+The **WeaponData_BP** is the master blueprint for all weapon data assets in the TPS Kit. It is a **PrimaryDataAsset** class, allowing developers to create weapon data assets directly from this class or any of its child classes.
+
+## Location
+
+📂 `/Game/TPSKit/Blueprints/Core/WeaponSystem/WeaponData/`
+
+## Purpose
+
+- Serves as the **base class** for all weapon-related data assets.
+- Stores essential weapon attributes that define behavior, stats, and characteristics.
+- Used in conjunction with the **Weapon Data Variable** in weapon blueprints.
+
+## Variables
+
+<Image zoom src="/assets/images/gbvf93qyvfq97834vf7843vf8734f8034.png" />
+
+## Child Classes
+
+- **[FirearmData_BP](/weapon-system/data/firearm-data-bp)** – Stores data specific to firearms.
+- **[MeleeData_BP](/weapon-system/data/melee-data-bp)** – Stores data specific to melee weapons.
+
+## Creating a Weapon Data Asset
+
+1. **Right-click** in the Content Browser.
+2. Navigate to `Miscellaneous` → `Data Asset`.
+3. Select `WeaponData_BP` or one of its child classes.
