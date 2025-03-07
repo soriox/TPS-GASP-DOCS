@@ -1,0 +1,48 @@
+---
+title: Adding custom interactions
+description: How to add custom interactions to your game
+---
+
+# How to add custom interactions
+
+Adding custom interactions is quite simple. First you need to create a child of the Interaction_BP and use the Interact event to add interaction logic.
+
+To create custom interactions, you can reference the examples in:
+
+📂 `/Game/TPSKit/Blueprints/Modules/InteractionSystem/Examples/`
+
+These interactions all inherit the Interaction_BP found in:
+
+📂 `/Game/TPSKit/Blueprints/Modules/InteractionSystem/Blueprints/Interaction_BP`
+
+---
+
+# Creating interactions
+
+<Image zoom src="/assets/images/9br8543bt85bw980tb549t8b5048tw984.png" />
+
+To get started, navigate to the location of the Interaction_BP shown above. Right-click and select Create Child Blueprint Class to create a new interaction. Once, created, open this blueprint and in the Class Defaults, select the interaction type:
+
+<Image zoom src="/assets/images/9trh9034qwbtr08934b8rfb3ob4greigg.png" />
+
+For holding interactions, you'll need to update the interaction's UI widget. This can be the included example widgets or your own custom widget.
+
+On BeginPlay, use the Get Interaction Progress function to get the percentage of the hold input, then use the Interaction BPI to call the Update Hold Progress which should update that value in your UI widget.
+
+<Image zoom src="/assets/images/o0wenfp9iebrfp89ebrf8pbergbnrteug.png" />
+
+To change the UI widget, you can change the class on the Indicator and InteractionUI components in the interaction's blueprint. These components are self-explanatory. The classes can be changed to your own custom UI widget.
+
+<Image zoom src="/assets/images/7r324vt98734vgr87b3487rv7834r83b8rb.png" />
+
+Finally, to control what happens during the interaction, use the Interact event included in the interaction blueprint.
+
+<Image zoom src="/assets/images/t945utb4pow5btpbueropbterbugt9b.png" />
+
+This should be enough to help you get started with interactions. I'll be adding a new section to the documentation site for this module.
+
+Let me know if you have any questions and reach out via Discord for support.
+
+Thank you for all of your patience and support. Happy developing friends!
+
+

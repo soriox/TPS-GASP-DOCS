@@ -1,9 +1,22 @@
 {
   "name": "Soriox's GASP TPS Kit",
   "description": "My documentation site",
+  "tabs": [
+    {
+      "id": "root",
+      "title": "Base Documentation",
+      "href": "/"
+    },
+    {
+      "id": "interaction-system",
+      "title": "Interaction System",
+      "href": "/interaction-system"
+    }
+  ],
   "sidebar": [
   {
     "group": "Getting Started",
+    "tab": "root",
     "pages": [
       {
         "title": "Introduction",
@@ -21,6 +34,7 @@
   },
   {
     "group": "Guides",
+    "tab": "root",
     "pages": [
       {
         "title": "Installing modules to the kit",
@@ -46,6 +60,7 @@
   },
   {
     "group": "Weapon System",
+    "tab": "root",
     "pages": [
       {
         "title": "Intro",
@@ -108,6 +123,27 @@
         ]
       }
     ]
+  },
+  {
+    "group": "Getting Started",
+    "tab": "interaction-system",
+    "pages": [
+      {
+        "title": "Getting Started",
+        "href": "/interaction-system",
+        "icon": "rocket"
+      }
+    ]
+  },
+  {
+    "group": "Guides",
+    "tab": "interaction-system",
+    "pages": [
+      {
+        "title": "Adding custom interactions",
+        "href": "/interaction-system/guides/custom-interactions"
+      }
+    ]
   }
-]
+  ]
 }
